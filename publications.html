@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Léopold Crestel - Publications</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,13 +20,27 @@
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+    ul
+    {
+        list-style-type: none;
+    }
+    #title{
+        font-size: 20px ;
+        color: #004770 ;
+    }
+    #author{
+        font-size: 14px;
+    }
+    #info{
+        font-size: 10px;
+    }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
@@ -44,19 +58,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">Home page</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="biography.html">Biography</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="publications.html">Publications</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="research.html">Research</a>
+                    </li>
+                    <li>
+                        <a href="teaching.html">Teaching</a>
+                    </li>
+                    <li>
+                        <a href="music.html">Music</a>
                     </li>
                 </ul>
             </div>
@@ -67,15 +87,28 @@
 
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.6</li>
-                    <li>jQuery v1.11.1</li>
+            <div class="col-lg-12">
+                <h1>Publications</h1>
+                <ul><font size="4">
+                    <li><a href="#conf_papers">Conference papers</a></li>
+                    <li><a href="#report">Report</a></li>
+                </font>
                 </ul>
+                <h2 id="conf_papers">Conference papers</h2>
+                <p>
+                    <div id=title><strong>Ongoing :</strong> Live Orchestral Piano, a system for real-time orchestral music generation</div>
+                    <div id=author>Léopold Crestel, Philippe Esling</div>
+                    <div id=info>International Conference on Computational Creativity (ICCC), Paris, 2016</div>
+                </p>
+                <br>
+                <h2 id="reports">Reports</h2>
+                <p>
+                    <div id=title>Deep symbolic learning for musical orchestration analysis and generation</div>
+                    <div id=author>Léopold Crestel</div>
+                    <div id=info>M.Sc. Thesis, IRCAM-UPMC, 2015</div>
+                </p>
+                <br>
             </div>
         </div>
         <!-- /.row -->
