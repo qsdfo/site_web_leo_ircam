@@ -64,6 +64,9 @@
                     <li>
                         <a href="music.html">Music</a>
                     </li>
+                    <li>
+                        <a href="side_projects.html">Side projects</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -78,85 +81,141 @@
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#lop">
-                                    Live orchestral piano</a>
-                                </h4>
-                            </div>
-                            <div id="lop" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <img src="images/lop.jpg" width="100%" class="img-thumbnail">
-                                        </div>
-                                        <div class="col-lg-8">
-                                            <p>
-                                                Orchestration is the subtle art of writing musical pieces for
-                                                the orchestra, by combining the properties of various instruments
-                                                in order to achieve a particular sonic rendering.
-                                                Among the different writing techniques for orchestral works,
-                                                one of them consists in first writing a piano score
-                                                and then spreading its different voices over the various instruments.
-                                            </p>
-                                            <p>
-                                                Ravel's orchestration of Mussorgsky's piano piece <em>Pictures at an exhibition</em>
-                                                is one of the most remarkable illustration of this technique
-                                                (see below for musical excerpts and pictures for the corresponding scores).
-                                                By observing this particular example and the many others projective orchestrations written by famous composers,
-                                                the strong correlations between a piano score and an orchestral proposition are blatant.
-                                            </p>
-                                            <p>
-                                                Hence, we believe that an appropriate learning algorithm could be able to
-                                                uncover the underlying structure of these correlations.
-                                                Relying on the recent advent of deep learning for time series modeling (<em>cRBM</em>, <em>RNN-RBM</em>, <em>Variational RNN</em>),
-                                                our objective is to develop a generative model for conditional time series
-                                                and apply it to the automatic orchestration task.
-                                                Beside this purely creative objective, we started a reflexion toward
-                                                the construction of an evaluation framework for generative temporal models.
-                                                Finally, we implement the investigated models in a system called LOP
-                                                (Live Orchestral Piano), which aims at performing
-                                                a real-time projective orchestration of a MIDI keyboard input.
-                                            </p>
-                                            <p>
-                                                <br><br>
-                                            </p>
-                                            <p>
-                                                <audio controls>
-                                                    <source src="audio/picatexhibpiano.wav" type="audio/wav" />
-                                                </audio>
-                                                <audio controls>
-                                                    <source src="audio/picatexhiborch.wav" type="audio/wav" />
-                                                </audio>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#lop">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#music_gen">
-                                        Automatic music composition</a>
-                                    </h4>
-                                </div>
-                                <div id="music_gen" class="panel-collapse collapse">
-                                    <div class="panel-body"></div>
+                                    Live orchestral piano
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="lop" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="images/lop.jpg" width="100%" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>
+                                            Orchestration is the subtle art of writing musical pieces for
+                                            the orchestra, by combining the properties of various instruments
+                                            in order to achieve a particular sonic rendering.
+                                            Among the different writing techniques for orchestral works,
+                                            one of them consists in first writing a piano score
+                                            and then spreading its different voices over the various instruments.
+                                        </p>
+                                        <p>
+                                            Ravel's orchestration of Mussorgsky's piano piece <em>Pictures at an exhibition</em>
+                                            is one of the most remarkable illustration of this technique
+                                            (see below for musical excerpts and pictures for the corresponding scores).
+                                            By observing this particular example and the many others projective orchestrations written by famous composers,
+                                            the strong correlations between a piano score and an orchestral proposition are blatant.
+                                        </p>
+                                        <p>
+                                            Hence, we believe that an appropriate learning algorithm could be able to
+                                            uncover the underlying structure of these correlations.
+                                            Relying on the recent advent of deep learning for time series modeling (<em>cRBM</em>, <em>RNN-RBM</em>, <em>Variational RNN</em>),
+                                            our objective is to develop a generative model for conditional time series
+                                            and apply it to the automatic orchestration task.
+                                            Beside this purely creative objective, we started a reflexion toward
+                                            the construction of an evaluation framework for generative temporal models.
+                                            Finally, we implement the investigated models in a system called LOP
+                                            (Live Orchestral Piano), which aims at performing
+                                            a real-time projective orchestration of a MIDI keyboard input.
+                                        </p>
+                                        <p>
+                                            <br><br>
+                                        </p>
+                                        <p>
+                                            <audio controls>
+                                                <source src="audio/picatexhibpiano.wav" type="audio/wav" />
+                                            </audio>
+                                            <audio controls>
+                                                <source src="audio/picatexhiborch.wav" type="audio/wav" />
+                                            </audio>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- /.row -->
                     </div>
-                    <!-- /.container -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#music_gen">
+                                <h4 class="panel-title">
+                                    Automatic music generation
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="music_gen" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <img src="" width="100%" class="img-thumbnail">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p>
+                                            Automatic music generation here refers to the realization of a computer program
+                                            able to produce symbolic music, <i>i.e.</i> a sequence of values describing
+                                            a piece. It can be a music score or a midi file, as opposed to an audio recording which
+                                            is a signal representation of the piece.
+                                        </p>
+                                        <p>
+                                            The objective is to develop a learning algorithm able
+                                            to grasps the characteristic structure of any given musical style
+                                            and generate music with this aesthetic.
+                                            <br>
+                                            Theoretically, this project consists in building a model
+                                            for high-dimensional time series with long range dependencies.
+                                            This is a highly challenging framework, closely related to many other applications such as
+                                            natural language processing, genomics, cardiac diseases detection and finance.
+                                        </p>
+                                        <p>
+                                            We investigate recently developed probabilistic models trained through statistical inference :
+                                            conditional (cRBM) and recurrent neural networks (RNN, LSTM),
+                                            trained in a variational methods (Variational-RNN),
+                                            and conditional models (CRF).
+                                        </p>
+                                        <!-- <p>
+                                        The idea of automatically produce music dates from the
+                                        very beginning of computer sciences.
+                                        Ada Lovelace suggested in 1840 that
+                                        "[if] the fundamental relations of pitched sound in the signs of harmony and of musical composition were susceptible of such expression and adaptations, the engine might compose elaborate and scientific pieces of music of any degree of complexity or extent".
+                                        It is noteworthy that in this early definition of computer music, the term "scientific pieces"
+                                        suggests compositions radically different from the existing music at this time.
+                                        This definition implies the emergence of new paradigms for music composition,
+                                        and has lead to the development of
+                                        algorithmic music (<a href=https://www.youtube.com/watch?v=n0njBFLQSk8>Illiac suite (1957), Lejaren Hiller and Leonard Isaacson</a>)
+                                        or stochastic music (<a href=https://www.youtube.com/watch?v=AE1M2iwjTsM>Pithoprakta (1955/1956), Iannis Xenakis</a>).
+                                    </p> -->
+                                    <!-- <p>
+                                    However, it seems extremely difficult to build a computer program able to write music in a known style,
+                                    for instance a classical sonata for piano in the style of Mozart, or a Jazz chorus.
+                                    Several attempts have been made and we can distinguish three approaches :
+                                    rule-based systems, constraint-based systems and probabilistic models.
+                                    Rule-based systems are defined by a set of rules defining deterministically
+                                    the generation process. These are particularly adapted to highly constrained music such as
+                                    Gregorian music (LIEN PROJET OCAML).
+                                    The second approach relies on the Constraint Solving Programming (CSP) field generate music
+                                    pieces through the definition of hard and soft constraints (pitch range, harmonic constraints...)
+                                    Probabilistic models are defined as
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
 
 
-                    <!-- jQuery Version 1.11.1 -->
-                    <script src="js/jquery.js"></script>
+<!-- jQuery Version 1.11.1 -->
+<script src="js/jquery.js"></script>
 
-                    <!-- Bootstrap Core JavaScript -->
-                    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-                </body>
+</body>
 
-                </html>
+</html>
