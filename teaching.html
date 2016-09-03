@@ -20,6 +20,20 @@
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+    ul
+    {
+        list-style-type: none;
+    }
+    .title{
+        font-size: 20px ;
+        color: #004770 ;
+    }
+    .author{
+        font-size: 14px;
+    }
+    .info{
+        font-size: 10px;
+    }
     </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -80,18 +94,25 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Teaching</h1>
+                <ul><font size="4">
+                    <li><a href="#tutoring">Tutoring</a></li>
+                </font>
+                </ul>
                 <br>
-                <p>
-                    <div id=title><a href=https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016-2015oct/WEB1><strong>Client-server architectures</strong></a></vdiv>
-                    <div id=author>Third year of B.Sc in computer sciences at <em>UPMC</em></div>
-                    <div id=info>HTML, CSS and Javascript</div>
-                </p>
-                <br>
-                <p>
-                    <div id=title><a href=http://www.licence.info.upmc.fr/lmd/licence/2015/ue/3I008-2016fev/><strong>Language interoperability</strong></a></div>
-                    <div id=author>Third year of B.Sc in computer sciences at <em>UPMC</em></div>
-                    <div id=info>OCaml, interface with C and Java. Realization of the project : <a href=>automatic generation of cantus firmus</a></div>
-                </p>
+                <h2 id="tutoring">Tutoring</h2>
+                <ul>
+                    <li>
+                        <div class="title"><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016-2015oct/WEB1"><strong>Client-server architectures</strong></a></vdiv>
+                        <div class="author">HTML, CSS and Javascript</div>
+                        <div class="info">Third year of B.Sc in computer sciences at <em>UPMC</em></div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="title"><a href=http://www.licence.info.upmc.fr/lmd/licence/2015/ue/3I008-2016fev/><strong>Language interoperability</strong></a></div>
+                        <div class="author">OCaml, interface with C and Java. Realization of the project : <a href=>automatic generation of cantus firmus</a></div>
+                        <div class="info">Third year of B.Sc in computer sciences at <em>UPMC</em></div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- /.row -->
