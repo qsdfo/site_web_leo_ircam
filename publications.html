@@ -43,50 +43,15 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Home page</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="biography.html">Biography</a>
-                    </li>
-                    <li>
-                        <a href="publications.html">Publications</a>
-                    </li>
-                    <li>
-                        <a href="research.html">Research</a>
-                    </li>
-                    <li>
-                        <a href="teaching.html">Teaching</a>
-                    </li>
-                    <li>
-                        <a href="music.html">Music</a>
-                    </li>
-                    <li>
-                        <a href="side_projects.html">Side projects</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <div w3-include-html="navigation.html"></div>
+    <script>
+        w3IncludeHTML();
+    </script>
 
     <!-- Page Content -->
     <div class="container">
@@ -95,25 +60,25 @@
                 <h1>Publications</h1>
                 <ul>
                     <font size="4">
-                        <li><a href="#conf_papers">Conference papers</a></li>
                         <li><a href="#report">Report</a></li>
+                        <li><a href="#unpublished">Unpublished</a></li>
                     </font>
                 </ul>
-                <h2 id="conf_papers">Conference papers</h2>
-                <ul>
-                    <li>
-                        <div class="title"><strong>Ongoing :</strong> Live Orchestral Piano, a system for real-time orchestral music generation</div>
-                        <div class="author">Léopold Crestel, Philippe Esling</div>
-                        <div class="info">International Conference on Computational Creativity (ICCC), Paris, 2016</div>
-                    </li>
-                </ul>
-                <br>
                 <h2 id="reports">Reports</h2>
                 <ul>
                     <li>
                         <div class="title"><a href="annexes/rapport_master_ATIAM_crestel.pdf">Deep symbolic learning for musical orchestration analysis and generation</a></div>
                         <div class="author">Léopold Crestel</div>
                         <div class="info">M.Sc. Thesis, IRCAM-UPMC, 2015</div>
+                    </li>
+                </ul>
+                <br>
+                <h2 id="unpublished">Unpublished works</h2>
+                <ul>
+                    <li>
+                        <div class="title"><a href="https://arxiv.org/abs/1609.01203">Live Orchestral Piano, a system for real-time orchestral music generation</a></div>
+                        <div class="author">Léopold Crestel, Philippe Esling</div>
+                        <div class="info">Arxiv, 5 September 2016</div>
                     </li>
                 </ul>
                 <br>

@@ -28,7 +28,7 @@
         font-size: 20px ;
         color: #004770 ;
     }
-    .author{
+    .description{
         font-size: 14px;
     }
     .info{
@@ -42,51 +42,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Home page</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="biography.html">Biography</a>
-                    </li>
-                    <li>
-                        <a href="publications.html">Publications</a>
-                    </li>
-                    <li>
-                        <a href="research.html">Research</a>
-                    </li>
-                    <li>
-                        <a href="teaching.html">Teaching</a>
-                    </li>
-                    <li>
-                        <a href="music.html">Music</a>
-                    </li>
-                    <li>
-                        <a href="side_projects.html">Side projects</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <div w3-include-html="navigation.html"></div>
+    <script>
+        w3IncludeHTML();
+    </script>
 
     <!-- Page Content -->
     <div class="container">
@@ -102,15 +66,24 @@
                 <h2 id="tutoring">Tutoring</h2>
                 <ul>
                     <li>
-                        <div class="title"><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016-2015oct/WEB1"><strong>Client-server architectures</strong></a></vdiv>
-                        <div class="author">HTML, CSS and Javascript</div>
-                        <div class="info">Third year of B.Sc in computer sciences at <em>UPMC</em></div>
+                        <div class="title"><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016-2015oct/WEB1"><strong>Éléments de programmation</strong></a></vdiv>
+                        <div class="description">Basic knowledge in algorithmic, using Python</div>
+                        <div class="info">First year of B.Sc in Physics and Chemistry at <em>UPMC</em></div>
+                        <div class="info">2016-2017</div>
                     </li>
                     <br>
                     <li>
-                        <div class="title"><a href=http://www.licence.info.upmc.fr/lmd/licence/2015/ue/3I008-2016fev/><strong>Language interoperability</strong></a></div>
-                        <div class="author">OCaml, interface with C and Java. Realization of the project : <a href=>automatic generation of cantus firmus</a></div>
+                        <div class="title"><a href=http://www.licence.info.upmc.fr/lmd/licence/2015/ue/3I008-2016fev/><strong>Modèles de programmation et interopérabilité des langages</strong></a></div>
+                        <div class="description">OCaml, interoperability with C and Java. Realization of the project : <a href=>automatic generation of cantus firmus</a></div>
                         <div class="info">Third year of B.Sc in computer sciences at <em>UPMC</em></div>
+                        <div class="info">2015-2017</div>
+                    </li>
+                    <br>
+                    <li>
+                        <div class="title"><a href="https://www-licence.ufr-info-p6.jussieu.fr/lmd/licence/2015/ue/3I016-2015oct/WEB1"><strong>Architectures client-serveurs</strong></a></vdiv>
+                        <div class="description">HTML, CSS and Javascript</div>
+                        <div class="info">Third year of B.Sc in computer sciences at <em>UPMC</em></div>
+                        <div class="info">2015-2016</div>
                     </li>
                 </ul>
             </div>
