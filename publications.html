@@ -15,26 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    ul
-    {
-        list-style-type: none;
-    }
-    .title{
-        font-size: 20px ;
-        color: #004770 ;
-    }
-    .author{
-        font-size: 14px;
-    }
-    .info{
-        font-size: 10px;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +31,7 @@
 
     <div w3-include-html="navigation.html"></div>
     <script>
-        w3IncludeHTML();
+    w3IncludeHTML();
     </script>
 
     <!-- Page Content -->
@@ -58,34 +39,50 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1>Publications</h1>
-                <ul>
-                    <font size="4">
-                        <li><a href="#report">Report</a></li>
-                        <li><a href="#unpublished">Unpublished</a></li>
-                    </font>
-                </ul>
-                <h2 id="reports">Reports</h2>
-                <ul>
-                    <li>
-                        <div class="title"><a href="annexes/rapport_master_ATIAM_crestel.pdf">Deep symbolic learning for musical orchestration analysis and generation</a></div>
-                        <div class="author">Léopold Crestel</div>
-                        <div class="info">M.Sc. Thesis, IRCAM-UPMC, 2015</div>
-                    </li>
-                </ul>
-                <br>
-                <h2 id="unpublished">Unpublished works</h2>
-                <ul>
-                    <li>
-                        <div class="title"><a href="https://arxiv.org/abs/1609.01203">Live Orchestral Piano, a system for real-time orchestral music generation</a></div>
-                        <div class="author">Léopold Crestel, Philippe Esling</div>
-                        <div class="info">Arxiv, 5 September 2016</div>
-                    </li>
-                </ul>
-                <br>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#reports">
+                                <h2 class="panel-title">
+                                    Reports
+                                </h2>
+                            </a>
+                        </div>
+                        <div id="reports" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <div class="title"><a href="annexes/rapport_master_ATIAM_crestel.pdf">Deep symbolic learning for musical orchestration analysis and generation</a></div>
+                                        <div class="author">Léopold Crestel</div>
+                                        <div class="info">M.Sc. Thesis, IRCAM-UPMC, 2015</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#unpublished">
+                                <h2 class="panel-title">
+                                    Unpublished papers
+                                </h2>
+                            </a>
+                        </div>
+                        <div id="unpublished" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <div class="title"><a href="https://arxiv.org/abs/1609.01203">Live Orchestral Piano, a system for real-time orchestral music generation</a></div>
+                                        <div class="author">Léopold Crestel, Philippe Esling</div>
+                                        <div class="info">Arxiv, 5 September 2016</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- /.row -->
-
     </div>
     <!-- /.container -->
 
